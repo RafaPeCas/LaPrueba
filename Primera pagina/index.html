@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculoria</title>
+    <script defer src="JS/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1> Bienvenido a calculoria </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="tablas.html">Tablas de multiplicar</a></li>
+            <li><a href="fotos.html">Fotos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <aside>
+            <h2> <b>Leyenda</b> </h2>
+            <table>
+                <tr>
+                    <th>Sumar:</th>
+                    <th>+</th>
+                </tr>
+                <tr>
+                    <th>Restar:</th>
+                    <th>-</th>
+                </tr>
+                <tr>
+                    <th>Multiplicar:</th>
+                    <th>*</th>
+                </tr>
+                <tr>
+                    <th>Dividir:</th>
+                    <th>/</th>
+                </tr>
+                <tr>
+                    <th>Elevar:</th>
+                    <th>^</th>
+                </tr>
+            </table>
+        </aside>
+        <section id="seccion1">
+            <h1>Calculadora</h1>
+            <form action="">
+                <input type="number" id="numero1">
+                <select name="" id="operador">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                    <option value="^">^</option>
+                </select>
+                <input type="number" id="numero2">
+                <br>
+                <input type="button" name="enviar" value="Operar" onclick="operar()">
+                <br>
+                <textarea name="respuesta" id="result" cols="30" rows="1"></textarea>
+            </form>
+        </section>
+        <section id="seccion2">
+            <h1>Numeros primos</h1>
+            <form action="">
+                <input type="number" id="primoNumero">
+                <br>
+                <input type="button" name="enviar" value="Comprobar" onclick="primo()">
+                <br>
+                <textarea name="respuesta" id="resultPrimo" cols="30" rows="1"></textarea>
+            </form>
+        </section>
+        <section id="seccion3">
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
